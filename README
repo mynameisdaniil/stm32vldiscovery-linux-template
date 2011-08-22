@@ -1,0 +1,4 @@
+Template STM32VLDiscovery project for Linux. No Keil! No IAR! No any another IDE's such as Eclipse!
+Only blank black console, emacs or vim for source code editing, ARM port of GCC for compiling, GDB 
+with stlink for load program to flash with using ST-Link on STM32VLDiscovery board (bb stm32flash! :-) ),
+Makefile and make utility to operate with project files and given utilities.

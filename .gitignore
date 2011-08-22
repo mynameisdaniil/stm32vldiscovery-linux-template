@@ -1,0 +1,16 @@
+core_cm3.o
+stm32vldiscovery-linux-template.elf
+stm32vldiscovery-linux-template.map
+main.o
+startup_stm32f10x_md_vl.o
+stm32f10x_gpio.o
+stm32f10x_it.o
+stm32f10x_rcc.o
+system_stm32f10x.o
+stlink/build/gdb-remote.d
+stlink/build/gdb-remote.o
+stlink/build/gdb-server.d
+stlink/build/gdb-server.o
+stlink/build/st-util
+stlink/build/stlink-hw.d
+stlink/build/stlink-hw.o

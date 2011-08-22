@@ -1,4 +1,4 @@
-BIN=lph9157-2-test
+BIN=stm32vldiscovery-linux-template
 
 TOOLS_PATH=/opt/sgpp-lite-arm-eabi-bin-2010.09.51
 TOOLS_PREFIX=arm-none-eabi-

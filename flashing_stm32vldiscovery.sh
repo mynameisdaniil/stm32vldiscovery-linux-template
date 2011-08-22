@@ -46,6 +46,8 @@ echo "*  For connect to it - run GDB in another console and:          *"
 echo "*   (gdb) target remote :1234                                   *"
 echo "*  For load ELF to STM32VLDiscovery                             *"
 echo "*   (gdb) load $1                                               *"
+echo "* Note: please use arm-none-eabi-gdb unstead of x86 targeted    *"
+echo "* gdb!                                                          *"
 echo "*****************************************************************"
 
 sudo ./stlink/build/st-util 1234 /dev/stlink

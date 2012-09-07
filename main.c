@@ -31,7 +31,10 @@ int main(void)
   hd44780_move_cursor(&lcd, 0, 2);
   hd44780_write_string(&lcd, "3 third row 3");
   hd44780_move_cursor(&lcd, 0, 3);
-  hd44780_write_string(&lcd, "4 fourth row 4");
+  //const size_t buf_size = lcd.columns_amount + 1;
+  /* char buf[] = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзиклмнопрстуфхцчшщъыьэюя"; */
+  //snprintf(buf, buf_size, "%d", (uint8_t)"Ф");
+  hd44780_write_string(&lcd, "По-русски!");
 
   /* while (1) */
   /* { */

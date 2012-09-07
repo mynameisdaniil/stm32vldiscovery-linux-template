@@ -5,6 +5,8 @@ TOOLS_PREFIX=arm-none-eabi-
 TOOLS_VERSION=4.6.3
 
 CFLAGS=-c -std=c99 -mcpu=cortex-m3 -mthumb -Wall -O0 -mapcs-frame -D__thumb2__=1 
+#For easy encoding of cyrillic into hd44780 char table
+CFLAGS+=-fexec-charset=CP1251
 CFLAGS+=-msoft-float -gdwarf-2 -mno-sched-prolog -fno-hosted -mtune=cortex-m3 
 CFLAGS+=-march=armv7-m -mfix-cortex-m3-ldrd -ffunction-sections -fdata-sections 
 CFLAGS+=-I./cmsis -I./stm32_lib -I.
@@ -58,5 +60,5 @@ clean:
 		$(BIN).elf \
 		$(BIN).bin
 
-load:
+load: all
 	./stlink/st-flash write /dev/sg0 $(BIN).bin 0x08000000

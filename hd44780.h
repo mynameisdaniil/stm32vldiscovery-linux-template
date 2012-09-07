@@ -89,6 +89,7 @@ typedef struct
 HD44780_Result hd44780_init(HD44780 *display, HD44780_Mode mode,
   const HD44780_Config *config, uint8_t columns, uint8_t rows, HD44780_CharSize charsize);
 HD44780_Result hd44780_write_char(HD44780 *display, char c);
+char encode_cyrillic(char c);
 HD44780_Result hd44780_write_string(HD44780 *display, const char *s);
 HD44780_Result hd44780_clear(HD44780 *display);
 HD44780_Result hd44780_home(HD44780 *display);
